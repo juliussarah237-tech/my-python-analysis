@@ -141,6 +141,8 @@ def janeJames(day1,day2):
     print(day1+day2)
 janeJames(8,2)
 janeJames(4,4)
+janeJames(4,4)
+janeJames(5,18)
 
 
 
