@@ -12,7 +12,7 @@ obj = {
 "PhoneNumber": "09045831170"
 }
 print(obj)
-# Accessing values in python.
+# Accessing values in python.S
 print(obj)
 print(obj["Username"])
 print(obj["Email"])
@@ -145,12 +145,87 @@ janeJames(4,4)
 
 
 
-
-
-
-
 # Environment Variable? help us to create an eyesolated environment for your application run time.
 # pip install (A python packages used to install or dependences in our application).(Virtual Env)
 # Any package you wnat to  install just say:(pip install.......(the appplication name)).
 
-# To activate my virtual environment: sarah/Scripts/Activate.ps1
+
+
+
+
+
+# A class in python is a blueprint used to create objects. Think about it as a template: (A) class = design.
+# (B) = Real instance of that design. Example: 
+
+class Person:
+    def __init__(self,name,age,salary):
+        self.name = name
+        self.age = age
+        self.salary = salary
+    def greet(self):
+        return f'Hello, my name is {self.name}'
+    
+   
+
+obj1 = Person('mattins', 23,5000)
+print(obj1)
+print(obj1.greet())
+print(obj1.salary)
+
+
+obj2 = Person('sarah',20,3000)
+print(obj2)
+print(obj2.greet())
+print(obj2.salary)
+
+
+obj3 = Person('dinma',28,450)
+print(obj3)
+print(obj3.greet())
+print(obj3.salary)
+
+obj4 = Person('blessing',40,1000)
+print(obj4)
+print(obj4.greet())
+print(obj4.salary)
+
+
+"Encapsulation"
+# Create A Class Called Account: 
+class Account:
+    def __init__(self,accountNumber,balance):
+       
+        self.accountNumber = accountNumber
+        self.balance = balance
+
+    def withdraw(self, amount):
+
+        if balance <= amount:
+
+            print(f'sorry insufficient balance')
+        else:
+
+            print(' you have been debited')
+
+    
+
+
+account1 = Account('0262829358',5000)
+print(account1)
+print(account1.accountNumber)
+print(account1.balance)
+
+
+
+account2 = Account('0262829666',8000)
+print(account2)
+print(account2.accountNumber)
+print(account2.balance)
+
+
+
+account3 = Account('0255829358',5000)
+print(account3)
+print(account3.accountNumber)
+print(account3.balance)
+
